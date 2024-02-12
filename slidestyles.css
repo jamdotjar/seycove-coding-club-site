@@ -1,0 +1,119 @@
+html {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  
+  :root {
+    --handf: #101820;
+    --stroke:  #6ca8ac;
+    --primary: #05030c;
+    --secondary: #101820;
+    --text: #ffffff;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: var(--primary);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    color: var(--text);
+    flex-direction: column;
+  }
+  
+  header {
+    background-color: var(--handf);
+    color: var(--text);
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+  
+  a {
+    color: var(--text);
+  }
+  
+  .section {
+    background-color: var(--secondary);
+    padding: 10px;
+    border: 1px solid var(--stroke);
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.6rem auto;
+    border-radius: 0.5rem;
+    max-width: 45rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .gameTitle {
+    font-size: 1rem;
+    margin-right: 5px;
+  }
+  
+  .gameLink:hover {
+    color: var(--stroke);
+  }
+  
+  .gameLink {
+    position: relative;
+    color: var(--stroke);
+    text-decoration: none;
+  }
+  
+  .gameLink::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 1px;
+    left: 0;
+    background-color:var(--stroke);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .gameLink:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .game {
+    border-top: 1px solid var(--stroke);
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    justify-content: space-between;
+    display: flex;
+  }
+  .credit {
+    position: absolute;
+    align-items: right;
+    justify-content: right;
+    text-align: right;
+    bottom: 50% - 12px;
+    width: 100%;
+    right: 3rem;
+    color: var(--text);
+  }
+  
+  footer {
+    color: var(--text);
+    position: relative;
+    margin-top: auto;
+    background-color: var(--handf);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
