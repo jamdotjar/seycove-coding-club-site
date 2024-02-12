@@ -1,0 +1,165 @@
+:root {
+    --text: #ffffff;
+    --background: #140b1e;
+    --primary: #001e52;
+    --secondary: #011e0e;
+    --accent: #6ca8ac;
+  }
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #05030c;
+    color: #ffffff;
+  }
+  .filler {
+    flex-grow: 1;
+  }
+  .navbar {
+    background: linear-gradient(45deg, var(--background), var(--secondary));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    border-bottom: 1px solid #6ca8ac4d;
+     /* Increased padding to make navbar bigger */
+  box-shadow: 0px 1px 60px 10px #6ca8ac2c;
+  }
+  .navbar-logo {
+    height: 60px; /* Increased size of the logo */
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 22px 20px; /* Increased padding to make navbar links bigger */
+    border: none;
+    text-decoration: none;
+  }
+  .navbar a:hover {
+    border: 1px solid #6ca8ac;
+    padding: 21px 19px; /* Adjust padding to maintain size with border */
+  }
+  .navbar a:active {
+    border: none;
+    background-color: #6ca8ac;
+    color: black;
+  }
+  .title-card {
+   
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    display: flex;
+    justify-content: flex-start; /* Aligns children to the left */
+    align-items: flex-start; /* Aligns children to the top */
+    padding: 20px; /* Adds some space inside the title card */
+  }
+  .title-card h1 {
+    margin-left: 0.5em;
+    color: #fff;
+    padding: 10px;
+
+    height: 100%;
+    font-size: 6em; /* Makes the text bigger */
+    align-self: flex-start; /* Aligns text to the top */
+    justify-self: flex-start; /* Aligns the text to the left */
+    width: 40%;
+    box-sizing: border-box;
+  }
+.about-section {
+    max-width: 600px;
+    margin: auto;
+    background-color: #131018; /* Dark background for dark mode */
+    color: #e6e6e6; /* Light text color for better readability in dark mode */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #131018; /* Subtle border color for dark mode */
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section:hover {
+    transform: translateY(-10px);
+}
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  z-index: -1;
+  background: linear-gradient(135deg, #6ca8ac10, transparent); /* Dark gradient for dark mode */
+  border-radius: 8px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.about-section:hover::before {
+  opacity: 1;
+}
+
+.about-section h2 {
+  
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 16px;
+  margin-top: -10px;
+  
+
+}
+
+.about-section p {
+  color: #e6e6e6; /* Light text color for paragraphs in dark mode */
+  line-height: 1.6;
+  font-size: 1.2em;
+  text-align: justify; /* Centers the text */
+}
+
+.site-footer {
+    background-color: #141414;
+    color: var(--text);
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #6ca8ac4d;
+    margin-top: 6rem;
+    box-shadow: 0px 1px 60px 10px #6ca8ac2c;
+}
+  .footer-content {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .site-footer p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .site-footer a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .site-footer a:hover {
+    color: var(--secondary);
+  }
+  .site-footer .fa-github {
+    margin-left: 5px;
+    color: var(--text);
+    transition: color 0.3s ease;
+  }
+  
+  .site-footer a:hover .fa-github {
+    color: var(--accent);
+  }
