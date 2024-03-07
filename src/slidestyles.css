@@ -36,7 +36,29 @@ html {
   a {
     color: var(--text);
   }
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* This ensures content starts from the far left */
+    text-align: left;
+    width: 100%;
+    padding-left: 10px; /* Adjust this value as needed to push the content from the edge */
+  }
   
+  .navbar-logo {
+    height: 60px; /* Increased size of the logo */
+    margin-left: 10px;
+    margin-right: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  .header-title {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+
   .section {
     background-color: var(--secondary);
     padding: 10px;

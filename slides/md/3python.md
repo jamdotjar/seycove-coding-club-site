@@ -4,6 +4,7 @@ theme: default
 class: 
   - lead
   - invert
+name: 'Python Microproject: Guessing Game' 
 ---
 
 # **Python Microproject: Guessing Game**

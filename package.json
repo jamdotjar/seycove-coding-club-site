@@ -4,13 +4,15 @@
   "description": "The website for the Seycove Coding Club",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server",
-    "build": "parcel build index.html"
+    "convertMd": "node src/convertMd.js",
+    "genSlides": "node src/genSlides.js",
+    "start": "npm run convertMd && npm run genSlides && lite-server",
+    "build": "npm run convertMd && npm run genSlides && parcel build index.html"
   },
   "author": "jamdotjar",
   "license": "ISC",
   "devDependencies": {
+    "@marp-team/marp-cli": "^3.4.0",
     "lite-server": "^2.6.1"
   }
 }

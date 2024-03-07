@@ -19,22 +19,7 @@
   <div class="slideshows">
     <div class="section">
       <div class="sectionTitle">Slideshows</div>
-      <div class="game">
-          <span class="gameTitle">Introduction to Python</span><a class="gameLink"
-            href="slides/canadaishere.html" link>slideshow</a>
-        </div>
-<div class="game">
-          <span class="gameTitle">Python Basics</span><a class="gameLink"
-            href="slides/python1.html" link>slideshow</a>
-        </div>
-<div class="game">
-          <span class="gameTitle">Python Microproject: Guessing Game</span><a class="gameLink"
-            href="slides/python2.html" link>slideshow</a>
-        </div>
-<div class="game">
-          <span class="gameTitle">Canada is here!</span><a class="gameLink"
-            href="slides/python3.html" link>slideshow</a>
-        </div>
+      <!-- SLIDES_PLACEHOLDER -->
     </div>
 
   </div>
