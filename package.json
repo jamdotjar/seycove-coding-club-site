@@ -1,19 +1,18 @@
 {
-  "name": "scc-site",
-  "version": "1.0.0",
-  "description": "The website for the Seycove Coding Club",
-  "main": "index.js",
-  "scripts": {
-    "convertMd": "node src/convertMd.js",
-    "genSlides": "node src/genSlides.js",
-    "start": "npm run convertMd && npm run genSlides && lite-server",
-    "build": "npm run convertMd && npm run genSlides && parcel build index.html"
-  },
-  "author": "jamdotjar",
-  "license": "ISC",
-  "devDependencies": {
-    "@marp-team/marp-cli": "^3.4.0",
-    "lite-server": "^2.6.1",
-    "parcel-bundler": "^1.12.5"
-  }
+	"name": "scc-site",
+	"version": "1.0.0",
+	"description": "The website for the Seycove Coding Club",
+	"main": "index.js",
+	"scripts": {
+		"convertMd": "node src/convertMd.js",
+		"genSlides": "node src/genSlides.js",
+		"start": "npm run convertMd && npm run genSlides && serve",
+		"build": "npm run convertMd && npm run genSlides"
+	},
+	"author": "jamdotjar",
+	"license": "ISC",
+	"devDependencies": {
+		"@marp-team/marp-cli": "^3.4.0",
+		"serve": "^14.2.1"
+	}
 }
